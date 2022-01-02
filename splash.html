@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="styles.css">
+
+  <title>Chasing Awe</title>
+  <script src="https://kit.fontawesome.com/0cf631f9c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+<div class="slide" id="intro">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Chasing Awe</h1>
+      <p class="lead">One Long Dream</p>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide1">
+  <h2>More Clever Name</h2>
+  <! -- insert carousel for shots -- >
+  <div id="portShots" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#shotOne" data-slide-to="0" class="active"></li>
+      <li data-target="#shotTwo" data-slide-to="1"></li>
+      <li data-target="#shotThree" data-slide-to="2"></li>
+      <li data-target="shotFour" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 img-fluid" img src="img/Green River Arrow.jpg" alt="Green River Overlook">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" img src="img/Mesa Arch Sunrise02.jpg" alt="Mesa Arch Sunrise">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" img src="img/Snowstorm Vert.jpg" alt="Rocky Mountain Snowstorm">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" img src="img/RainierMilkytake2.jpg" alt="Milky Way Rainier">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#portShots" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#portShots" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="slide" id="slide2">
+  <h2>Set up for the ultimate Clever Name</h2>
+</div>
+
+<div class="slide" id="slide3">
+  <h2>Ultimate Clever Name</h2>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-camera-retro"></i>Foster Photography</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="splash.html">Splash</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home">
+</section>
+<div style="height: 1000px">
+
+</div>
+
+
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+
+<footer>
+ 
+</footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
